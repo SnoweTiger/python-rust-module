@@ -4,4 +4,9 @@ version = "0.1.0"
 description = "Example of python module written in rust"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "fibonacci-rs",
+]
+
+[tool.uv.sources]
+fibonacci-rs = { path = "fibonacci_rs/target/wheels/fibonacci_rs-0.1.0-cp311-cp311-win_amd64.whl" }
